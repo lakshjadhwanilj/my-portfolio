@@ -3,25 +3,81 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color: #250636;
+  --secondary-color: #613ca3;
+  --secondary-light-color: #c7b1fd;
+  --primary-light-color: #37015c;
+  --light-text-color: #e8e3ff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  @apply m-0 p-0 box-border;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--primary-color);
 }
+
+.navlink-container{
+  background: var(--secondary-color);
+}
+
+.navlink:hover {
+  background: var(--primary-light-color);
+  color: #fff;
+}
+
+.active {
+  background: var(--secondary-light-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.logo, .footer, .skillHeading {
+  color: var(--light-text-color);
+}
+
+.btn {
+  background: var(--secondary-color);
+  color: var(--light-text-color);
+}
+
+.btn-invert {
+  color: var(--light-text-color);
+  outline: var(--light-text-color) 1px solid;
+}
+
+.subheading:after {
+  content: '';
+  width: 410px;
+  height: 3px;
+  position: absolute;
+  margin: 20px;
+  /* top: 50%;
+  left: 23%; */
+  background: #fff;
+}
+
+.skillSet {
+  background: var(--primary-light-color);
+}
+
+.skillTitle {
+  color: var(--secondary-light-color);
+}
+
+.skillSetCard:before {
+  content: '';
+  width: 82%;
+  height: 3px;
+  position: absolute;
+  background: var(--secondary-light-color);
+}
+
+.skillCard {
+  background: var(--secondary-light-color);
+}
+
+/* .iconCard {
+  background: var(--primary-color);
+  color: var(--secondary-light-color);
+} */
