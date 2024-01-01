@@ -1,9 +1,9 @@
-import { Inter } from 'next/font/google'
+import { Josefin_Sans } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const josefin = Josefin_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Laksh Jadhwani',
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={josefin.className}>
         <div className='m-auto px-[100px] min-h-screen flex flex-col justify-between'>
           <Navbar />
           {children}

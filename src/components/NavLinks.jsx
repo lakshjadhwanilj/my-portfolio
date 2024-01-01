@@ -7,6 +7,7 @@ import { FaCode } from "react-icons/fa";
 import { IoDocument } from "react-icons/io5";
 import { TbDeviceGamepad3 } from "react-icons/tb";
 import { IoLogoFreebsdDevil } from "react-icons/io";
+import { RESUME_LINK } from '@/data/constants';
 
 const links = [
     {
@@ -29,11 +30,6 @@ const links = [
         path: '/about',
         icon: <IoLogoFreebsdDevil className='inline text-md mb-1' />,
     },
-    {
-        title: 'Resume',
-        path: '/resume',
-        icon: <IoDocument className='inline text-md mb-1' />,
-    },
 ]
 
 const NavLinks = () => {
@@ -47,6 +43,9 @@ const NavLinks = () => {
                         {link.icon} {link.title}
                     </Link>    
                 ))}
+                <Link href={RESUME_LINK} target='_blank' className='navlink min-w-[100px] py-[10px] px-[15px] rounded-[30px] font-medium text-center text-sm text-gray-300'>
+                    <IoDocument className='inline text-md mb-1' /> Resume
+                </Link>
             </div>
         </div>
     )

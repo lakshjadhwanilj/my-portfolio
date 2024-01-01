@@ -2,6 +2,8 @@ import React from 'react'
 import { IoDocument } from "react-icons/io5";
 import { AiTwotoneMail } from "react-icons/ai";
 import { FaHandPeace } from "react-icons/fa6";
+import Link from 'next/link';
+import { EMAIL_ID, RESUME_LINK } from '@/data/constants';
 
 const Hero = () => {
     return (
@@ -12,12 +14,12 @@ const Hero = () => {
                 <h4 className='text-2xl my-3'>Full Stack Web Developer | CS Graduate Student</h4>
                 <p>I thrive on turning ideas into code, specializing in crafting seamless and intuitive solutions. Join me in exploring the ever-evolving world of technology—one line of code at a time.</p>
                 <div className='flex justify-center lg:justify-normal gap-5 my-5'>
-                    <button className='btn py-3 px-3 min-w-[125px] border-none rounded font-bold uppercase tracking-wider text-sm'>
+                    <Link href={`mailto:${EMAIL_ID}`} target='_blank' className='btn py-3 px-3 min-w-[125px] border-none rounded font-bold uppercase tracking-wider text-sm'>
                         <AiTwotoneMail className='inline mb-[3px] text-lg'/> Hire Me
-                    </button>
-                    <button className='btn-invert py-3 px-3 min-w-[125px] border-none rounded font-bold uppercase tracking-wider text-sm'>
+                    </Link>
+                    <Link href={RESUME_LINK} target='_blank' className='btn-invert py-3 px-3 min-w-[125px] border-none rounded font-bold uppercase tracking-wider text-sm'>
                         <IoDocument className='inline mb-1' /> Get Resume
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className='loffieContainer flex-1 relative lg:max-h-[400px]'>

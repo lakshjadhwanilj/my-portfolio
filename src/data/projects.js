@@ -1,5 +1,5 @@
 import { technicalSkills } from "./skills";
-import PortfolioImage from "../../public/blog1.jpg";
+import PortfolioImage from "../../public/Portfolio.webp";
 import TechzyImage from "../../public/Techzy.webp";
 import CourseHubImage from "../../public/CourseHub.webp";
 import PhoneBookImage from "../../public/PhoneBook.webp";
@@ -9,9 +9,9 @@ import NotePadImage from "../../public/NotePad.webp";
 export const projects = [
     {
         title: "Personal Portfolio",
-        link: "https://github.com/lakshjadhwanilj",
+        link: "https://github.com/lakshjadhwanilj/my-portfolio",
         image: PortfolioImage,
-        description: 'My personal portfolio website showcasing a journey through projects, and skills with a sleek and engaging design..',
+        description: 'My personal portfolio website showcasing a journey through projects, and skills with a sleek and engaging design.',
         skills: [
             technicalSkills.nextjs,
             technicalSkills.reactjs,

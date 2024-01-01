@@ -25,6 +25,7 @@ body {
 .navlink:hover {
   background: var(--primary-light-color);
   color: #fff;
+  transition: all 0.5s ease-in-out;
 }
 
 .active {
@@ -43,11 +44,27 @@ body {
 .btn {
   background: var(--secondary-color);
   color: var(--light-text-color);
+  outline: 1px solid var(--secondary-color);
+}
+
+.btn:hover {
+  background: var(--primary-color);
+  color: var(--light-text-color);
+  outline: var(--light-text-color) 1px solid;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn-invert {
+  background: var(--primary-color);
   color: var(--light-text-color);
   outline: var(--light-text-color) 1px solid;
+}
+
+.btn-invert:hover {
+  background: var(--secondary-color);
+  color: var(--light-text-color);
+  outline: 1px solid var(--secondary-color);
+  transition: all 0.5s ease-in-out;
 }
 
 .subheading:after {
@@ -72,10 +89,6 @@ body {
   content: '';
   display: none;
 }
-/* 
-.skillContainer:nth-child(2) {
-  grid-row: span 2 !important;
-} */
 
 .skillSet {
   border-bottom: 2px solid var(--light-text-color);
@@ -85,14 +98,6 @@ body {
   border: none;
 }
 
-/* .skillSetCard:before {
-  content: '';
-  width: 82%;
-  height: 3px;
-  position: absolute;
-  background: var(--secondary-light-color);
-} */
-
 .skillCard {
   background: var(--secondary-color);
   color: var(--light-text-color);
@@ -101,17 +106,17 @@ body {
 .projectCard:hover {
   background: var(--primary-light-color);
   color: #fff;
+  transition: all 0.5s ease-in-out;
 }
 
 .projectCard:hover .skillCard {
   background: var(--secondary-light-color);
   color: var(--primary-color);
-  /* outline: 1px solid var(--light-text-color); */
+  transition: all 0.5s ease-in-out;
 }
 
 .quote, .contactCard {
   background: var(--primary-light-color);
-  /* opacity: 0.89; */
 }
 
 .contactLink {
@@ -127,7 +132,15 @@ body {
   background: #fff;
 }
 
-/* .iconCard {
+.contactLink:hover {
+  cursor: pointer;
   background: var(--primary-color);
-  color: var(--secondary-light-color);
-} */
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.socialLink:hover {
+  color: var(--primary-light-color);
+  background: var(--light-text-color);
+  transition: all 0.5s ease-in-out;
+}

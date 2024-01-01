@@ -12,7 +12,7 @@ const ContactCard = () => {
                 {
                     socials.map((social, index) => (
                         <div key={index} className='contactLink rounded-xl p-2 '>
-                            <div className="text-xl flex items-center">
+                            <div className="contactText text-xl flex items-center">
                                 {
                                     social.clickable ? (
                                         <Link href={social.content} target="_blank" className=''>
