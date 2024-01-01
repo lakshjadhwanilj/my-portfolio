@@ -1,8 +1,15 @@
+import ContactCard from '@/components/ContactCard'
+import Quote from '@/components/Quote'
+import Timeline from '@/components/Timeline'
 import React from 'react'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <Quote />
+      <Timeline />
+      <ContactCard />
+    </div>
   )
 }
 

@@ -1,17 +1,19 @@
 import React from 'react'
+import SkillTablet from './SkillTablet'
 
-const Skillset = ({skillName, skillIcon, skills}) => {
+const Skillset = ({skillSetTitle, skillSetIcon, skills, skillIndex}) => {
   return (
-    <div className='skillSet my-7 rounded-[10px] p-5'>
-        <h1 className='skillTitle text-xl font-medium mb-3 tracking-wider'>{skillIcon} {skillName}</h1>
-        <div className='skillSetCard grid grid-cols-5 gap-6'>
+    <div className={`skillSet mx-6 mb-2 p-1 pb-4 ${skillIndex === 1 && 'row-span-2'}`}>
+        <h1 className='skillTitle text-base font-medium mb-3 tracking-wider text-center'>{skillSetIcon} {skillSetTitle}</h1>
+        <div className='skillSetCard flex flex-wrap gap-2'>
             {
-                skills.map((skill, index) => 
-                    (<div id={index} className='skillCard mt-3 flex items-center rounded-[10px] max-h-[40px] min-w-[70px] text-left px-3'>
-                        <div className='iconCard rounded-lg inline-block p-3 font-bold'>{skill.icon}</div>
-                        <div className='inline-block font-bold'>{skill.title}</div>
-                    </div>)
-                )
+                skills.map((skill, index) => (
+                    <SkillTablet
+                        key={index}
+                        skillTitle={skill.title}
+                        skillIcon={skill.icon}
+                    />
+                ))
             }
         </div>
     </div>

@@ -32,8 +32,12 @@ body {
   color: var(--primary-color) !important;
 }
 
-.logo, .footer, .skillHeading {
+.logo, .footer, .hero, .skillHeading, .skillTitle, .projectHeading, .projectCard, .quote, .timeEventContainer, .timeHeading, .timeContainer, .contactCard {
   color: var(--light-text-color);
+}
+
+.timeEventContainer h2 {
+  color: #fff;
 }
 
 .btn {
@@ -52,29 +56,75 @@ body {
   height: 3px;
   position: absolute;
   margin: 20px;
-  /* top: 50%;
-  left: 23%; */
   background: #fff;
 }
 
+.timeEvent:after {
+  content: '';
+  width: 220px;
+  height: 3px;
+  position: absolute;
+  margin: 10px;
+  background: var(--secondary-light-color);
+}
+
+.timeEvent:last-child::after {
+  content: '';
+  display: none;
+}
+/* 
+.skillContainer:nth-child(2) {
+  grid-row: span 2 !important;
+} */
+
 .skillSet {
-  background: var(--primary-light-color);
+  border-bottom: 2px solid var(--light-text-color);
 }
 
-.skillTitle {
-  color: var(--secondary-light-color);
+.skillSet:nth-last-child(2), .skillSet:last-child {
+  border: none;
 }
 
-.skillSetCard:before {
+/* .skillSetCard:before {
   content: '';
   width: 82%;
   height: 3px;
   position: absolute;
   background: var(--secondary-light-color);
-}
+} */
 
 .skillCard {
+  background: var(--secondary-color);
+  color: var(--light-text-color);
+}
+
+.projectCard:hover {
+  background: var(--primary-light-color);
+  color: #fff;
+}
+
+.projectCard:hover .skillCard {
   background: var(--secondary-light-color);
+  color: var(--primary-color);
+  /* outline: 1px solid var(--light-text-color); */
+}
+
+.quote, .contactCard {
+  background: var(--primary-light-color);
+  /* opacity: 0.89; */
+}
+
+.contactLink {
+  background: var(--secondary-color);
+}
+
+.aboutHeading:after {
+  content: '';
+  width: 530px;
+  height: 3px;
+  position: absolute;
+  margin: 13px;
+  background: #fff;
 }
 
 /* .iconCard {
