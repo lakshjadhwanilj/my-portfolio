@@ -37,13 +37,14 @@ const NavLinks = () => {
 
     return (
         <div>
-            <div className='flex items-center gap-3'>
+            <div className='flex flex-col md:flex-row items-center gap-3'>
                 {links.map((link => 
-                    <Link href={link.path} key={link.title} className={`navlink min-w-[100px] py-[10px] px-[15px] rounded-[30px] font-medium text-center text-sm text-gray-300 ${pathName === link.path && 'active'}`}>
+                // lg:min-w-[6.25rem]
+                    <Link href={link.path} key={link.title} className={`navlink min-w-[15rem] md:min-w-[6.25rem] py-[10px] px-[15px] rounded-[30px] font-medium text-center text-xl md:text-sm  ${pathName === link.path && 'active'}`}>
                         {link.icon} {link.title}
                     </Link>    
                 ))}
-                <Link href={RESUME_LINK} target='_blank' className='navlink min-w-[100px] py-[10px] px-[15px] rounded-[30px] font-medium text-center text-sm text-gray-300'>
+                <Link href={RESUME_LINK} target='_blank' className='navlink min-w-[15rem] md:min-w-[6.25rem] py-[10px] px-[15px] rounded-[30px] font-medium text-center text-xl md:text-sm'>
                     <IoDocument className='inline text-md mb-1' /> Resume
                 </Link>
             </div>

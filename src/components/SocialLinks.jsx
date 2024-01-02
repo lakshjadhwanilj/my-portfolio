@@ -4,7 +4,7 @@ import React from 'react'
 
 const SocialLinks = () => {
   return (
-    <div className='flex gap-4'>
+    <div className='flex gap-2 md:gap-4'>
         {
             socials.map((social, index) => (
                 <div key={index}>

@@ -22,6 +22,10 @@ body {
   background: var(--secondary-color);
 }
 
+.sm-navlink-container{
+  background: var(--primary-color);
+}
+
 .navlink:hover {
   background: var(--primary-light-color);
   color: #fff;
@@ -33,7 +37,7 @@ body {
   color: var(--primary-color) !important;
 }
 
-.logo, .footer, .hero, .skillHeading, .skillTitle, .projectHeading, .projectCard, .quote, .timeEventContainer, .timeHeading, .timeContainer, .contactCard {
+.navlink, .logo, .footer, .hero, .skillHeading, .skillTitle, .projectHeading, .projectCard, .quote, .timeEventContainer, .timeHeading, .timeContainer, .contactCard {
   color: var(--light-text-color);
 }
 
@@ -69,11 +73,22 @@ body {
 
 .subheading:after {
   content: '';
-  width: 410px;
+  width: 15rem;
   height: 3px;
   position: absolute;
-  margin: 20px;
+  margin: 0.7rem;
   background: #fff;
+}
+
+@media (min-width: 768px) {
+  .subheading:after {
+    content: '';
+    width: 24rem;
+    height: 3px;
+    position: absolute;
+    margin: 1.1rem;
+    background: #fff;
+  }
 }
 
 .timeEvent:after {
