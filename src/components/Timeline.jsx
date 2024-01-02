@@ -16,7 +16,7 @@ const timeline = [
         title: "Consultant",
         organization: "LTI Mindtree",
         location: "Mumbai | India",
-        description: "Executed and developed over 50 changes to reports and forms by leveraging the capabilities of JD Edwards EnterpriseOne."
+        description: "Elevated enterprise systems through report enhancements, winning the Business Unit of the Year."
     },
     {
         title: "Master of Science, Computer Science",

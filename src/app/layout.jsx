@@ -2,6 +2,7 @@ import { Josefin_Sans } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
+import Script from 'next/script'
 
 const josefin = Josefin_Sans({ subsets: ['latin'] })
 
@@ -18,10 +19,10 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
           <Footer />
-          {/* Lottie */}
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
         </div>
+        {/* Lottie */}
+        <Script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></Script> 
+        <Script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></Script> 
       </body>
     </html>
   )

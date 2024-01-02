@@ -14,9 +14,9 @@ const Quote = () => {
         <div className="col-span-2 py-2 px-12 rounded-3xl ">
             <h3 className='aboutHeading text-2xl font-semibold mb-2'> <IoLogoFreebsdDevil className='inline mb-1' /> About Me</h3>
             <p className="text-lg text-justify">
-                Hello! <FaHandPeace className='inline' /> My name is Laksh Jadhwani, a Computer Science graduate student with a passion for crafting innovative solutions. I am a former Consultant at LTIMindtree. 
+                Hello! <FaHandPeace className='inline' /> {"My name is Laksh Jadhwani, a Computer Science graduate student with a passion for crafting innovative solutions. I am a former Consultant at LTIMindtree. "}
                 <br /><br />
-                My goal is to merge creativity and technology, enhancing user experiences through full-stack development. Motivated by continuous learning, I thrive on challenges and contribute to projects with a collaborative spirit. Beyond code, I'm driven by the desire to create meaningful solutions that positively impact lives.
+                {"My goal is to merge creativity and technology, enhancing user experiences through full-stack development. Motivated by continuous learning, I thrive on challenges and contribute to projects with a collaborative spirit. Beyond code, I'm driven by the desire to create meaningful solutions that positively impact lives."}
             </p>
         </div>
     </div>

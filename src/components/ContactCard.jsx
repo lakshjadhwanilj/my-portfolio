@@ -8,7 +8,7 @@ const ContactCard = () => {
     <div className='flex flex-col lg:flex-row gap-[50px]'>
         <div className='contactCard flex-1 justify-center  items-center my-auto rounded-[10px]'>
             <div className='grid grid-cols-1 p-6 gap-4'>
-                <h3 className='text-2xl font-semibold'><MdConnectWithoutContact className='inline mb-1 ' /> Let's Connect</h3>
+                <h3 className='text-2xl font-semibold'><MdConnectWithoutContact className='inline mb-1 ' /> {"Let's Connect"}</h3>
                 {
                     socials.map((social, index) => (
                         <div key={index} className='contactLink rounded-xl p-2 '>
