@@ -11,7 +11,7 @@ export const projects = [
         title: "Personal Portfolio",
         link: "https://github.com/lakshjadhwanilj/my-portfolio",
         image: PortfolioImage,
-        description: 'My personal portfolio website showcasing a journey through projects, and skills with a sleek and engaging design.',
+        description: 'My personal portfolio—journey through my projects and skills with an engaging design showcasing my professional capabilities.',
         skills: [
             technicalSkills.nextjs,
             technicalSkills.reactjs,
@@ -45,7 +45,7 @@ export const projects = [
         title: "CourseHub",
         link: "https://github.com/lakshjadhwanilj/CourseHub",
         image: CourseHubImage,
-        description: 'A seamless web-app for learning, robust content delivery, with scalable backend integration.',
+        description: 'A seamless e-learning platform with robust content delivery and scalable backend integration for an enriched user experience.',
         skills: [
             technicalSkills.reactjs,
             technicalSkills.nodejs,
@@ -64,7 +64,7 @@ export const projects = [
         title: "PhoneBook",
         link: "https://github.com/lakshjadhwanilj/PhoneBook-Angular",
         image: PhoneBookImage,
-        description: 'A phone book with complete CRUD functionalities, using JSON-server for managing data.',
+        description: 'Phonebook with full CRUD functionalities and data management powered by JSON-server—streamlined & efficient contact handling.',
         skills: [
             technicalSkills.angular,
             technicalSkills.typescript,
@@ -78,7 +78,7 @@ export const projects = [
         title: "SocialApe",
         link: "https://github.com/lakshjadhwanilj/SocialApe",
         image: SocialApeImage,
-        description: 'A simple social media web application that provides features like uploading images and posting comments.',
+        description: 'A social media web app with a user-friendly interface enabling image uploads and facilitating interactive comment posting.',
         skills: [
             technicalSkills.reactjs,
             technicalSkills.javascript,
@@ -92,7 +92,7 @@ export const projects = [
         title: "NotePad",
         link: "https://github.com/lakshjadhwanilj/NotePad-WebApp",
         image: NotePadImage,
-        description: 'A simple web-app where users can share their stories, provides complete CRUD functionality.',
+        description: 'A user-friendly story-sharing web app empowering users with full CRUD functionality for seamless story creation and sharing..',
         skills: [
             technicalSkills.nodejs,
             technicalSkills.expressjs,

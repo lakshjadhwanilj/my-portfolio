@@ -12,7 +12,7 @@ const Skills = () => {
             </h1>
         </div>
         {/* grid grid-cols-2 gap-3 */}
-        <div className='skillContainer grid grid-cols-2'>
+        <div className='skillContainer grid grid-cols-1 md:grid-cols-2'>
           {
             skillSet.map((skillGroup, index) => (
               <Skillset 

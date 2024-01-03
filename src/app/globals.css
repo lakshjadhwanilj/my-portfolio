@@ -91,26 +91,34 @@ body {
   }
 }
 
-.timeEvent:after {
-  content: '';
-  width: 220px;
-  height: 3px;
-  position: absolute;
-  margin: 10px;
-  background: var(--secondary-light-color);
-}
-
-.timeEvent:last-child::after {
-  content: '';
-  display: none;
+@media (min-width: 1024px) {
+  .timeEvent:after {
+    content: '';
+    width: 8rem;
+    height: 3px;
+    position: absolute;
+    margin: 10px;
+    background: var(--secondary-light-color);
+  }
+  
+  .timeEvent:last-child::after {
+    content: '';
+    display: none;
+  }
 }
 
 .skillSet {
   border-bottom: 2px solid var(--light-text-color);
 }
 
-.skillSet:nth-last-child(2), .skillSet:last-child {
+.skillSet:last-child {
   border: none;
+}
+
+@media (min-width: 768px) {
+  .skillSet:nth-last-child(2) {
+    border: none;
+  }
 }
 
 .skillCard {
@@ -118,17 +126,19 @@ body {
   color: var(--light-text-color);
 }
 
-.projectCard:hover {
-  background: var(--primary-light-color);
-  color: #fff;
-  transition: all 0.5s ease-in-out;
+@media (min-width: 768px) {
+  .projectCard:hover {
+    background: var(--primary-light-color);
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+  }
 }
-
+/* 
 .projectCard:hover .skillCard {
   background: var(--secondary-light-color);
   color: var(--primary-color);
   transition: all 0.5s ease-in-out;
-}
+} */
 
 .quote, .contactCard {
   background: var(--primary-light-color);
@@ -138,13 +148,15 @@ body {
   background: var(--secondary-color);
 }
 
-.aboutHeading:after {
-  content: '';
-  width: 530px;
-  height: 3px;
-  position: absolute;
-  margin: 13px;
-  background: #fff;
+@media (min-width: 1024px) {
+  .aboutHeading:after {
+    content: '';
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    margin: 13px;
+    background: #fff;
+  }
 }
 
 .contactLink:hover {

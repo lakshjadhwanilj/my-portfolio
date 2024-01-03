@@ -33,25 +33,27 @@ const Timeline = () => {
         <div>
             <h3 className='timeHeading text-center text-2xl font-semibold mb-2'> <GiJourney className='inline mb-1' /> My Journey</h3>
         </div>
-        <div className='timeContainer flex justify-between my-3'>
-            {
-                timeStamps.map((time, index) => (
-                    <span key={index} className='timeEvent font-semibold'><FaArrowTrendUp className='inline mb-1' /> &nbsp; {time}</span>
-                )) 
-            }
-        </div>
-        <div className='grid grid-cols-3 gap-5'>
-            {
-                timeline.map((timeEvent, index) => (
-                    <div key={index} className='timeEventContainer'>
-                        <h2 className='p-1 text-lg font-bold'>{timeEvent.organization}</h2>
-                        <hr />
-                        <h3 className='p-1 text-sm font-semibold italic'>{timeEvent.title}</h3>
-                        <p className='p-1 text-base font-semibold'><FaLocationCrosshairs className='inline mb-1 font-bold' /> {timeEvent.location}</p>
-                        <p className='p-1 text-sm font-medium'><MdSportsScore className='inline mb-1 text-lg font-semibold' /> {timeEvent.description}</p>
-                    </div>
-                ))
-            }
+        <div className='grid grid-cols-4 lg:grid-cols-none gap-2'>
+            <div className='timeContainer col-span-1 lg:col-span-3 flex flex-col lg:flex-row justify-between lg:my-3'>
+                {
+                    timeStamps.map((time, index) => (
+                        <span key={index} className='timeEvent font-semibold'><FaArrowTrendUp className='mb-1 hidden md:inline' />  {time}</span>
+                    )) 
+                }
+            </div>
+            <div className='col-span-3 grid lg:grid-cols-3 gap-2 md:gap-5'>
+                {
+                    timeline.map((timeEvent, index) => (
+                        <div key={index} className='timeEventContainer'>
+                            <h2 className='p-1 text-lg font-bold'>{timeEvent.organization}</h2>
+                            <hr className='' />
+                            <h3 className='p-1 text-sm font-semibold italic'>{timeEvent.title}</h3>
+                            <p className='p-1 text-base font-semibold'><FaLocationCrosshairs className='inline mb-1 font-bold' /> {timeEvent.location}</p>
+                            <p className='p-1 font-bold'><MdSportsScore className='inline mb-1 text-lg font-semibold' /> {timeEvent.description}</p>
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     </div>
   )
