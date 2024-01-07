@@ -3,16 +3,19 @@ import { IoMdCloudy } from "react-icons/io";
 import { SiWebpack } from "react-icons/si";
 import { TbDatabaseStar } from "react-icons/tb";
 import { technicalSkills } from "./skills";
+import { GrTechnology } from "react-icons/gr";
 
-const programmingLanguages = [ "java", "javascript", "python", "typescript", "c", "cpp", "php" ].map((skill) => technicalSkills[skill] || { title: skill, icon: null });
+const programmingLanguages = [ "java", "javascript", "python", "typescript", "c", "cpp" ].map((skill) => technicalSkills[skill] || { title: skill, icon: null });
 
-const webDevelopment = [ "html", "css", "javascript", "bootstrap", "sass", "tailwindcss", "materializecss", "nodejs", "reactjs", "materialui", "nextjs", "expressjs", "ejs", "redux", "angular", "typescript", "reactnative" ].map((skill) => technicalSkills[skill] || { title: skill, icon: null });
+const webDevelopment = [ "html", "css", "javascript", "bootstrap", "tailwindcss",  "reactjs", "nodejs", "angular", "typescript", "nextjs", "expressjs", "sass", "materialui", "materializecss", "ejs" ].map((skill) => technicalSkills[skill] || { title: skill, icon: null });
 
 const databases = [ "mysql", "mongodb", "firebase", "oracle" ].map((skill) => technicalSkills[skill] || { title: skill, icon: null });
 
-const cloudDevelopment = [ "git", "restapi", "aws", "heroku", "netlify" ].map((skill) => technicalSkills[skill] || { title: skill, icon: null });
+const frameworks = [ "redux",  "springboot", "hibernate", "mongoose",  ].map((skill) => technicalSkills[skill] || { title: skill, icon: null });
 
-const softwares = [ "canva", "springboot", "androidstudio", "bootomlineTransform", "jde" ].map((skill) => technicalSkills[skill] || { title: skill, icon: null });
+const cloudDevelopment = [ "aws", "heroku", "netlify", "paypal", "stripe" ].map((skill) => technicalSkills[skill] || { title: skill, icon: null });
+
+const softwares = [ "bootomlineTransform", "jde", "git", "github", "postman", "restapi", "reactnative", "django", "canva", "androidstudio" ].map((skill) => technicalSkills[skill] || { title: skill, icon: null });
 
 export const skillSet = [
     {
@@ -26,9 +29,14 @@ export const skillSet = [
         icon: <SiWebpack className="inline" />,
     },
     {
-        title: "Databases",
+        title: "Database Management",
         skills: databases,
         icon: <TbDatabaseStar className="inline" />,
+    },
+    {
+        title: "Frameworks & Libraries",
+        skills: frameworks,
+        icon: <GrTechnology className="inline" />,
     },
     {
         title: "Cloud Development",

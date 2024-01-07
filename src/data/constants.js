@@ -1,5 +1,5 @@
 /* Resume Link */
-export const RESUME_LINK = 'https://drive.google.com/file/d/1VFsrhvUQHIBZKgMnicxj4Ob10E_9CgJi/view?usp=drive_link'
+export const RESUME_LINK = 'https://drive.google.com/file/d/1hx_T71Xw_xHhxWWKzrLAflxeXS_5By5N/view?usp=drive_link'
 
 /* Social Links */
 export const GITHUB_LINK = 'https://github.com/lakshjadhwanilj'

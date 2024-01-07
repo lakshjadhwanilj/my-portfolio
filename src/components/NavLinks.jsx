@@ -9,6 +9,7 @@ import { TbDeviceGamepad3 } from "react-icons/tb";
 import { IoLogoFreebsdDevil } from "react-icons/io";
 import { RESUME_LINK } from '@/data/constants';
 import { BsFillMenuButtonWideFill } from 'react-icons/bs';
+import { GiCrossMark } from 'react-icons/gi';
 
 const links = [
     {
@@ -53,8 +54,8 @@ const NavLinks = () => {
                     </Link>
                 </div>
             </div>
-            <button onClick={() => setOpen(prev => !prev)} className="md:hidden text-white">
-                <BsFillMenuButtonWideFill className='text-2xl' />
+            <button onClick={() => setOpen(prev => !prev)} className="md:hidden text-white transition-all ease-in-out">
+                { open ? (<GiCrossMark className='text-2xl' />) : (<BsFillMenuButtonWideFill className='text-2xl' />) }
             </button>
             {
                 open && (
