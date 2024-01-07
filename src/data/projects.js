@@ -19,8 +19,7 @@ export const projects = [
             technicalSkills.javascript,
             technicalSkills.html,
             technicalSkills.css,
-            technicalSkills.git,
-            technicalSkills.netlify
+            technicalSkills.git
         ],
     },
     {
@@ -34,7 +33,8 @@ export const projects = [
             technicalSkills.java,
             technicalSkills.springboot,
             technicalSkills.oracle,
-            // technicalSkills.javascript,
+            technicalSkills.paypal,
+            technicalSkills.javascript,
             technicalSkills.html,
             technicalSkills.css,
             technicalSkills.bootstrap,
