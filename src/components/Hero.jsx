@@ -8,7 +8,7 @@ import { EMAIL_ID, RESUME_LINK } from '@/data/constants';
 const Hero = () => {
     return (
         <div className='hero flex flex-col md:flex-row gap-7 lg:gap-12'>
-            <div className='textContainer flex-1 justify-center items-center md:my-auto'>
+            <div className='textContainer flex-1 justify-center items-center mt-28 mb-16 md:my-auto'>
                 <h3 className='subheading text-xl md:text-3xl lg:text-4xl font-semibold mb-3'>HELLO</h3>
                 <h1 className='text-4xl md:text-5xl lg:text-7xl font-semibold mb-3'>
                     I AM LAKSH <FaHandPeace className='inline mb-1' />
@@ -24,7 +24,7 @@ const Hero = () => {
                     </Link>
                 </div>
             </div>
-            <div className='loffieContainer hidden md:block flex-1 relative md:max-h-80'>
+            <div className='loffieContainer  flex-1 relative md:max-h-80'>
                 <dotlottie-player src="https://lottie.host/9a4e4694-752b-4050-99b1-2015db4b0c49/j2ymDfl3HM.json" background="transparent" speed="1" classname='object-cover' loop autoplay></dotlottie-player>
             </div>
         </div>
